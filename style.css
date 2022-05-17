@@ -1,0 +1,101 @@
+/*<!--In the name of kindly generous ALLAH-->
+<!--Thanks ALLAH-->*/
+
+body{
+    padding:10px;
+    box-sizing: border-box;
+    background-color:#151515;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    margin:0;
+    min-height:100vh;
+    gap:10px;
+}
+
+form{
+    box-sizing:border-box;
+    position:relative;
+    width:80vw;
+    align-self:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background-color:rgba(0,255,255,.3);
+    padding:10px;
+    border-radius:30px;
+}
+
+form input{
+    background-color:transparent;
+    padding:10px;
+    color:cyan;
+    border-radius:100px;
+    border:1px solid cyan;
+    margin-bottom:10px;
+    text-align:center;
+    width:90%;
+}
+form label{
+    color:cyan;
+}
+
+form button[type="submit"]{
+    background-color:cyan;
+    color:#000;
+    border:none;
+    padding:10px;
+    border-radius:20px;
+    width:400px;
+    max-width:100%;
+}
+
+form input::placeholder{
+    color:#0ff5;
+}
+form input:focus{
+    outline:none;
+    border-color:#ff5e6c;
+}
+
+.output{
+    padding:30px;
+    box-sizing:border-box;
+    width:80vw;
+    flex-grow:1;
+    align-self:center;
+    border-radius:30px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background-color:rgba(153, 205, 50, 0.329);
+    color:yellowgreen;
+}
+
+.output hr{
+    border-color:yellowgreen;
+    width:100%;
+}
+
+.output .table_container{
+    width:100%;
+    overflow:auto;
+}
+.output table{
+    text-align:center;
+    border-collapse:collapse;
+    margin:auto;
+}
+.output table tr > *{
+    padding:10px;
+    border:1px solid yellowgreen;
+
+}
+
+.ok{
+    background-color:rgba(153, 205, 50, 0.329);
+    color:yellowgreen;
+}
+.error{
+    color:#ff5e6c;
+}
